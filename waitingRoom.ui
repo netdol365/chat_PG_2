@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>waitingRoom</class>
+ <widget class="QDialog" name="waitingRoom">
+  <property name="windowModality">
+   <enum>Qt::NonModal</enum>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>458</width>
+    <height>531</height>
+   </rect>
+  </property>
+  <property name="focusPolicy">
+   <enum>Qt::TabFocus</enum>
+  </property>
+  <property name="windowTitle">
+   <string>대기실</string>
+  </property>
+  <property name="modal">
+   <bool>false</bool>
+  </property>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>21</x>
+     <y>26</y>
+     <width>91</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>대화방 목록</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>300</x>
+     <y>110</y>
+     <width>64</width>
+     <height>15</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>대기유저</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnGetin">
+   <property name="geometry">
+    <rect>
+     <x>120</x>
+     <y>470</y>
+     <width>93</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>입장</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnQuit">
+   <property name="geometry">
+    <rect>
+     <x>257</x>
+     <y>470</y>
+     <width>93</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>로그아웃</string>
+   </property>
+  </widget>
+  <widget class="QListWidget" name="chatRoomList">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>60</y>
+     <width>251</width>
+     <height>371</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>11</pointsize>
+    </font>
+   </property>
+   <property name="selectionBehavior">
+    <enum>QAbstractItemView::SelectItems</enum>
+   </property>
+   <item>
+    <property name="text">
+     <string>채팅방1</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>채팅방2</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>채팅방3</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>채팅방4</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>채팅방5</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QLabel" name="label_3">
+   <property name="geometry">
+    <rect>
+     <x>300</x>
+     <y>27</y>
+     <width>64</width>
+     <height>15</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>계정명 :</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lbName">
+   <property name="geometry">
+    <rect>
+     <x>364</x>
+     <y>27</y>
+     <width>64</width>
+     <height>15</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>계정이름</string>
+   </property>
+  </widget>
+  <widget class="QListWidget" name="waitMembers">
+   <property name="geometry">
+    <rect>
+     <x>300</x>
+     <y>140</y>
+     <width>131</width>
+     <height>291</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_4">
+   <property name="geometry">
+    <rect>
+     <x>300</x>
+     <y>70</y>
+     <width>81</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>대기원 수 :</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="waitmemberCount">
+   <property name="geometry">
+    <rect>
+     <x>384</x>
+     <y>70</y>
+     <width>21</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>0</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_6">
+   <property name="geometry">
+    <rect>
+     <x>408</x>
+     <y>71</y>
+     <width>21</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>명</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="chat1Volume">
+   <property name="geometry">
+    <rect>
+     <x>225</x>
+     <y>64</y>
+     <width>41</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>굴림</family>
+     <pointsize>8</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>미접속</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="chat2Volume">
+   <property name="geometry">
+    <rect>
+     <x>225</x>
+     <y>88</y>
+     <width>41</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>굴림</family>
+     <pointsize>8</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>미접속</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="chat3Volume">
+   <property name="geometry">
+    <rect>
+     <x>225</x>
+     <y>110</y>
+     <width>41</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>굴림</family>
+     <pointsize>8</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>미접속</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="chat4Volume">
+   <property name="geometry">
+    <rect>
+     <x>225</x>
+     <y>131</y>
+     <width>41</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>굴림</family>
+     <pointsize>8</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>미접속</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="chat5Volume">
+   <property name="geometry">
+    <rect>
+     <x>225</x>
+     <y>153</y>
+     <width>41</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>굴림</family>
+     <pointsize>8</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>미접속</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
